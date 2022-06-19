@@ -23,10 +23,11 @@ int countMinSwaps(vector<int> arr){
     bool insideWhileLoop = 0;
     //or
     // if element is visited or element is in right postion 
-    int old_position = arrInd[i].second;
-    if(visited[i]==true or old_position==i){
-      continue;
-    }
+    // int old_position = arrInd[i].second;
+    // if(visited[i]==true or old_position==i){
+    //   i++;
+    //   continue;
+    // }
 
     
     while(!visited[currentInd]){
