@@ -11,7 +11,7 @@ int countMinSwaps(vector<int> arr){
 
   sort(arrInd.begin(), arrInd.end());
 
-  unordered_map<int, bool> visited;
+  vector<bool> visited(n, 0);
 
   int i = 0;
   int noOfSwaps = 0;
@@ -21,6 +21,14 @@ int countMinSwaps(vector<int> arr){
     int noOfElements = 0;
 
     bool insideWhileLoop = 0;
+    //or
+    // if element is visited or element is in right postion 
+    // int old_position = arrInd[i].second;
+    // if(visited[i]==true or old_position==i){
+    //   i++;
+    //   continue;
+    // }
+
     
     while(!visited[currentInd]){
       
